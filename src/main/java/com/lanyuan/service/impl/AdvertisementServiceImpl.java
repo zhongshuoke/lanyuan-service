@@ -19,7 +19,7 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 	@Autowired
 	private AdvertisementMapper advertisementMapper;
 
-	public PageView query(PageView pageView, Advertisement advertisement) {
+	public PageView query(PageView pageView, Advertisement advertisement) { 
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("paging", pageView);
 		map.put("t", advertisement);
