@@ -4,11 +4,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.commons.lang.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.lanyuan.entity.City;
+import com.lanyuan.entity.WxArticle;
 import com.lanyuan.mapper.CityMapper;
 import com.lanyuan.pulgin.mybatis.plugin.PageView;
 import com.lanyuan.service.CityService;
@@ -26,6 +28,14 @@ public class CityServiceImpl implements CityService {
 		List<City> list = cityMapper.query(map);
 		pageView.setRecords(list);
 		return pageView;
+	}
+	
+	public List<City> queryCityList(int offset, int limit) {
+		Map<String, Object> map = new HashMap<String, Object>();
+		map.put("offset", offset);
+		map.put("limit", limit);
+		List<City> list = cityMapper.queryCityList(map);
+		return list;
 	}
 	
 	public List<City> queryAll(City c) {
