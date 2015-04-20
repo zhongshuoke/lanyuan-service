@@ -11,15 +11,4 @@ import com.lanyuan.pulgin.mybatis.plugin.PageView;
  *
  */
 public interface WxUserService extends BaseService<WxUser>{
-	public WxUser querySingleUser(String name);
-	public WxUser isExist(int id);
-
-	public WxUser countUser(WxUser wxUser);
-	
-	/**
-	 * @param wxSchedule
-	 * @param pageView
-	 * @return
-	 */
-	public PageView queryNoMatch(WxUser wxUser,PageView pageView);
 }
