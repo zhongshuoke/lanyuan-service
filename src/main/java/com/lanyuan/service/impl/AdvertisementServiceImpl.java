@@ -51,4 +51,8 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 	public int count(Advertisement advertisement) {
 		return advertisementMapper.count(advertisement);
 	}
+
+	public Advertisement isExist(int Id) {
+		return advertisementMapper.isExist(Id);
+	}
 }
