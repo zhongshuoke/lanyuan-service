@@ -94,4 +94,10 @@ public class WxArticleServiceImpl implements WxArticleService {
 		return wxArticleMapper.countArticle(wxArticle);
 	}
 
+
+	public void recomm(String id) {
+		// TODO Auto-generated method stub
+		wxArticleMapper.recomm(id);
+	}
+
 }

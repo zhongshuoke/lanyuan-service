@@ -20,6 +20,8 @@ public interface WxArticleService extends BaseService<WxArticle>{
 	 */
 	public WxArticle countArticle(WxArticle wxArticle);
 	
+	public void recomm(String id);
+	
 	/**
 	 * @param wxArticle
 	 * @param pageView
