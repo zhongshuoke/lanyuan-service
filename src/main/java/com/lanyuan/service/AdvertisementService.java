@@ -7,5 +7,5 @@ import com.lanyuan.entity.City;
 public interface AdvertisementService extends BaseService<Advertisement>{
 	public int count(Advertisement advertisement);
 	
-	public Advertisement isExist(int Id);
+	public Advertisement isExist(int Id); 
 }

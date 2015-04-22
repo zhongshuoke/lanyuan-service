@@ -53,6 +53,6 @@ public class AdvertisementServiceImpl implements AdvertisementService {
 	}
 
 	public Advertisement isExist(int Id) {
-		return advertisementMapper.isExist(Id);
+		return advertisementMapper.isExist(Id); 
 	}
 }
