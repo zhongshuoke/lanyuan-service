@@ -96,8 +96,12 @@ public class WxArticleServiceImpl implements WxArticleService {
 
 
 	public void recomm(String id) {
-		// TODO Auto-generated method stub
 		wxArticleMapper.recomm(id);
+	}
+
+
+	public void updateRecommStatus(String id) {
+		wxArticleMapper.updateRecommStatus(id);
 	}
 
 }

@@ -22,6 +22,8 @@ public interface WxArticleService extends BaseService<WxArticle>{
 	
 	public void recomm(String id);
 	
+	public void updateRecommStatus(String id);
+	
 	/**
 	 * @param wxArticle
 	 * @param pageView
